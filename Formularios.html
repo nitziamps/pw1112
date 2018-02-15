@@ -1,0 +1,32 @@
+
+<html>
+	<head>
+		<title>Formularios</title>
+	</head>
+	<body>
+		Formularios: Contenedor que sirve para encapsular metodos de 
+		entrada de datos del usualrio <br>
+		En el dormulario se puede:
+		<ol>
+			<li>Capturar datos</li>
+			<li>Validar lo que se ingresa</li>
+			<li>Enviar a procesos</li>
+			<li>Reiniciar la captura</li>
+		</ol>
+		<form action="procesa.html" method="post">
+			<input name="txtNumeroControl" type="text" placeholder="N&uacute;mero de control" required autofocus>
+			<input name="txtClave" type="password" placeholder="Ingresa clave" required>
+			<input name="txtPromedio" type="number" placeholder="Promedio">
+			<input name="txtFecha" type="date" placeholder="Fecha" >
+			<input name="txtColor" type="color" >
+			<input name="txtCorreo" type="email" placeholder="Email">
+			<input name="txtBuscar" type="search">
+			<!--Funciona para enviar en un from-->
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borra">
+			<!--No funciona para enviar en un from-->
+			<input type="button" value="No enviar">
+
+		</form>
+	</body>
+</html>
